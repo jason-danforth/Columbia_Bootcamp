@@ -1,0 +1,44 @@
+html,
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+  position: relative;
+  width: 960px;
+}
+
+text {
+  font: 10px sans-serif;
+}
+
+form {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+#overlay {
+  position: fixed;
+  display: block;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+input {
+  margin: 0 7px;
+}
+
+/* set map, body, and html to 100% of the screen size */
+#map,
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}

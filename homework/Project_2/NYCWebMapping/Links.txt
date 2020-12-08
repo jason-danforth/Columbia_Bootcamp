@@ -1,0 +1,8 @@
+Download individual neighborhoods:
+https://chriswhong.github.io/plutoplus/#
+
+Preview GEOjsons (not a plug-in, drag and drop geojson file):
+http://geojson.tools/
+
+Convert Shape file to GEOjson
+https://www.statsilk.com/maps/convert-esri-shapefile-map-geojson-format

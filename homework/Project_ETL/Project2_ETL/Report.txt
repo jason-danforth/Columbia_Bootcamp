@@ -1,0 +1,6 @@
+Our group used multiple CSVs from NYC Open Data that tracked cyclist and pedestrian traffice across the Brooklyn Bridge in NYC. 
+Transforming the data required combining hourly data into daily data, clamping date ranges between the two data sets. 
+The data was also normalized into separate dataframes with linked indices: cyclists, pedestrians, dates, and weekdays.
+SQLAlchemy was used to create a DB and tables for the normalized data, input the data, and then query. 
+As a quick test or the ETL pipeline, a query was made comparing pedestrian and cyclist traffic by day of week, temperature and precipitation.
+The results show peaks on weekends and drops on the days with the most rain.

@@ -1,0 +1,92 @@
+<!--
+Managing variables: https://stackoverflow.com/questions/11178426/how-can-i-pass-data-from-flask-to-javascript-in-a-template
+href and js function (scroll down to "onclick parameter" answer): https://stackoverflow.com/questions/1265887/call-javascript-function-on-hyperlink-click
+-->
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NYC Boroughs</title>
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet@latest/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/d3Style.css') }}">
+</head>
+
+
+<body>
+  <br>
+  <!-- <div class="dropdown">
+    <a class="btn btn-secondary btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="right: 0; left: auto;">
+      Zipcode
+    </a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="/api/zipcode/10001">10001</a>
+      <a class="dropdown-item" href="/api/zipcode/10019">10019</a>
+      <a class="dropdown-item" href="/api/zipcode/10024">10024</a>
+    </div>
+  </div>
+  <br>
+  <div class="dropdown">
+    <a class="btn btn-secondary btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="right: 100; left: 100;">
+      Landuse
+    </a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="/api/value_type/landuse">Land Use</a>
+      <a class="dropdown-item" href="/api/value_type/yearbuilt">Year Built</a>
+      <a class="dropdown-item" href="/api/value_type/numfloors">Density</a>
+    </div>
+  </div>
+  <br> -->
+  <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Land Use
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/api/value_type/landuse" onclick="var dictObj={{data|safe}}; doTheThing(dictObj)">Land Use</a>
+          <a class="dropdown-item" href="/api/value_type/yearbuilt" onclick="var dictObj={{data|safe}}; doTheThing(dictObj)">Year Built</a>
+          <a class="dropdown-item" href="/api/value_type/numfloors" onclick="var dictObj={{data|safe}}; doTheThing(dictObj)">Density</a>
+      </div>
+  </div>
+  <br>
+  <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Zipcode
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/api/zipcode/10001" onclick="var dictObj={{data|safe}}; doTheThing(dictObj)">10001</a>
+          <a class="dropdown-item" href="/api/zipcode/10019" onclick="var dictObj={{data|safe}}; doTheThing(dictObj)">10019</a>
+          <a class="dropdown-item" href="/api/zipcode/10024" onclick="var dictObj={{data|safe}}; doTheThing(dictObj)">10024</a>
+      </div>
+  </div>
+  <div class="chart"></div>
+    <svg class="legend"></svg>
+  </div>
+</body>
+
+<script type="text/javascript" src="../static/js/config.js"></script>
+<script type="text/javascript" src="../static/js/chart.js"></script>
+<script>
+  // Generate initial map and chart
+
+  // Can pass individual values as strings when wrapped in "", like "{{data.value_type}}"", but not list objects
+  // Can pass the entire object if we define it as a js variable first, but that won't work for onclick functions... 
+  
+  //doTheThing("{{data.value_type}}", "{{data.zipcode}}", "{{data.values}}");
+  var dictObj = {{data|safe}};
+  doTheThing(dictObj);
+</script>

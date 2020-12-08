@@ -1,0 +1,5 @@
+*.shp
+pluto_19v1.csv
+*.dbf
+MapPLUTO.json
+PLUTO/*

@@ -1,0 +1,85 @@
+// Array of movie ratings
+var movieScores = [
+  4.4,
+  3.3,
+  5.9,
+  8.8,
+  1.2,
+  5.2,
+  7.4,
+  7.5,
+  7.2,
+  9.7,
+  4.2,
+  6.9
+];
+
+// Starting a rating count
+var sum = 0;
+
+// Arrays to hold movie scores
+var goodMovieScores = [];
+var okMovieScores = [];
+var badMovieScores = [];
+
+/*
+// Use a for loop to iterate through the movie scores
+for (var i = 0; i < movieScores.length; i++) {
+
+  // Add each score to the ratings count
+  var score = movieScores[i];
+  sum += score;
+
+  // If the movie's rating is greater than 7, add it to the list of good movies
+  if (score > 7) {
+    goodMovieScores.push(score);
+  }
+  // If the movie's rating is between 5 and 7, add it to the list of "Ok" movies
+  else if (score <= 7 && score > 5) {
+    okMovieScores.push(score);
+  }
+  // Otherwise, if the movie's rating is less than or equal to 5, add it to the list of bad movies
+  else {
+    badMovieScores.push(score);
+  }
+}
+
+// Find the average score
+//var mean = movieScores.reduce((a, b) => a + b, 0) / movieScores.length
+*/
+
+function cumsum(value) {
+  sum += value;
+  return sum;
+}
+movieScores.forEach(cumsum);
+var mean = sum / movieScores.length;
+console.log(`The mean score is ${mean}`);
+
+
+var distances = 0;
+function findDist(value, mean) {
+  distances += Math.pow(Math.abs(value - mean), 2);
+  return distances;
+}
+movieScores.forEach(findDist);
+var variance = distances / mean;
+console.log(`The variance is ${variance}`);
+
+
+
+
+
+/*
+// Store the length of movie ratings
+var numGoodMovies = goodMovieScores.length;
+var numOkMovies = okMovieScores.length;
+var numBadMovies = badMovieScores.length;
+// Print results
+console.log("---------");
+console.log(`There are ${numGoodMovies} good movies.`);
+console.log(`There are ${numOkMovies} ok movies.`);
+console.log(`There are ${numBadMovies} bad movies.`);
+console.log(`The average movie rating is ${avg}.`);
+console.log("---------");
+*/

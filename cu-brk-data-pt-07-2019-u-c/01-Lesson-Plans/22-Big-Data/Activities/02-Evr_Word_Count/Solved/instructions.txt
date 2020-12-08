@@ -1,0 +1,1 @@
+run python script from CMD: python bacon_counter.py input.txt

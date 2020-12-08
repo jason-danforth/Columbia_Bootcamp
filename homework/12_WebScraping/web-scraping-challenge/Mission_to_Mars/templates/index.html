@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars Info</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get the latest data</a></p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Latest Mars News</h3>
+        <h4>{{data.title}}</h4>
+        <h5>{{data.teaser}}</h5>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <h3>Featured Mars Image</h3>
+          <img src="{{data.JPL}}" class="img-fluid" style="max-width: 100%;">
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="row">
+            <h3>Current Mars Weater</h3>
+            {{data.weather}}
+          </div>
+          <div class="row">
+            <h3>Mars Facts & Figures</h3>
+            <!--Injecting HTML from Flask use the '|safe' snippet to avoid encoding problem-->
+            {{ data.table|safe }}           
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <h3>Mars Hemispheres</h3>
+        <ul style="list-style: none;">
+          
+          <!--This syntax is only for iterating over items passed from Flask-->
+          {% for hemi in data.hemispheres %} 
+          <div class="col-md-6 col-sm-12">
+            <li>{{hemi.title}}</li>
+            <img src="{{hemi.img_url}}" class="img-fluid" style="max-width: 100%;">
+            <br>
+          </div>
+          {% endfor %}
+        </ul>
+      </div>
+
+  </div>
+</body>
+
+</html>
+

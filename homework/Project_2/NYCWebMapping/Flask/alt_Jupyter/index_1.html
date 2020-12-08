@@ -1,0 +1,86 @@
+<!--
+Managing variables: https://stackoverflow.com/questions/11178426/how-can-i-pass-data-from-flask-to-javascript-in-a-template
+href and js function (scroll down to "onclick parameter" answer): https://stackoverflow.com/questions/1265887/call-javascript-function-on-hyperlink-click
+-->
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NYC Boroughs</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@latest/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="d3Style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<!-- 
+The app needs to return an updated data dictionary. See Mission to Mars example
+return render_template("index.html", data=results) 
+-->
+
+<a href='http://www.google.com' onclick='myJavaScriptFunction();'>mylink</a>
+<body>
+    <div class="dropdown">
+        <!-- button HTML: https://getbootstrap.com/docs/4.0/components/dropdowns/ -->
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Display Data
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <!-- Find how to include variable in link -->
+            <a class="dropdown-item" href="/route/landuse/{{data.zipcode}}" value="landuse" onclick="myFunction(this.value)">Land Use</a> 
+            <a class="dropdown-item" href="/route/yearbuilt/{{data.zipcode}}" value="yearbuilt" onclick="myFunction(this.value)">Year Built</a>
+            <a class="dropdown-item" href="/route/numfloors/{{data.zipcode}}" value="numfloors" onclick="myFunction(this.value)">Density</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!-- API key, mapbox key here -->
+<script type="text/javascript" src="config.js"></script>
+<!-- JS, various logics to take a look at -->
+<script type="text/javascript" src="map.js"></script>
+
+<!-- 
+STRUCTURE ROUTES TO ACCEPT VARIABLES
+
+https://www.tutorialspoint.com/flask/flask_quick_guide.htm
+Scroll down to Flask - URL Building
+
+The following script demonstrates use of url_for() function.
+
+from flask import Flask, redirect, url_for
+app = Flask(__name__)
+
+@app.route('/admin')
+def hello_admin():
+   return 'Hello Admin'
+
+@app.route('/guest/<guest>')
+def hello_guest(guest):
+   return 'Hello %s as Guest' % guest
+
+@app.route('/user/<name>')
+def hello_user(name):
+   if name =='admin':
+      return redirect(url_for('hello_admin'))
+   else:
+      return redirect(url_for('hello_guest',guest = name))
+
+if __name__ == '__main__':
+   app.run(debug = True) 
+-->

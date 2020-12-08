@@ -1,0 +1,242 @@
+Station,Train,Borough
+Van Cortlandt Park-242 St ,1,The Bronx
+238 St ,1,The Bronx
+231 St ,1,The Bronx
+Marble Hill-225 St ,1,Manhattan
+215 St ,1,Manhattan
+207 St ,1,Manhattan
+Dyckman St ,1,Manhattan
+191 St ,1,Manhattan
+181 St ,1,Manhattan
+168 St ,1,Manhattan
+157 St ,1,Manhattan
+145 St ,1,Manhattan
+137 St-City College ,1,Manhattan
+125 St ,1,Manhattan
+116 St-Columbia University ,1,Manhattan
+Cathedral Pkwy-110 St ,1,Manhattan
+103 St ,1,Manhattan
+96 St ,1,Manhattan
+86 St ,1,Manhattan
+79 St ,1,Manhattan
+72 St ,1,Manhattan
+66 St-Lincoln Center ,1,Manhattan
+59 St-Columbus Circle ,1,Manhattan
+50 St ,1,Manhattan
+Times Sq-42 St / 42 St,1,Manhattan
+34 St-Penn Station ,1,Manhattan
+28 St ,1,Manhattan
+23 St ,1,Manhattan
+18 St ,1,Manhattan
+14 St / 6 Av,1,Manhattan
+Christopher St-Sheridan Sq ,1,Manhattan
+Houston St ,1,Manhattan
+Canal St ,1,Manhattan
+Franklin St ,1,Manhattan
+Chambers St ,1,Manhattan
+WTC Cortland ,1,Manhattan
+Rector St ,1,Manhattan
+South Ferry / Whitehall St,1,Manhattan
+Wakefield-241 St,2,The Bronx
+Nereid Av ,2,The Bronx
+233 St ,2,The Bronx
+225 St ,2,The Bronx
+219 St ,2,The Bronx
+Gun Hill Rd ,2,The Bronx
+Burke Av ,2,The Bronx
+Allerton Av ,2,The Bronx
+Pelham Pkwy ,2,The Bronx
+Bronx Park East ,2,The Bronx
+East 180 St ,2,The Bronx
+West Farms Sq-East Tremont Av ,2,The Bronx
+174 St ,2,The Bronx
+Freeman St ,2,The Bronx
+Simpson St ,2,The Bronx
+Intervale Av ,2,The Bronx
+Prospect Av ,2,The Bronx
+Jackson Av ,2,The Bronx
+3 Av-149 St ,2,The Bronx
+149 St-Grand Concourse ,2,The Bronx
+135 St ,2,Manhattan
+125 St ,2,Manhattan
+116 St ,2,Manhattan
+Central Park North-110 St ,2,Manhattan
+96 St ,2,Manhattan
+72 St ,2,Manhattan
+Times Sq-42 St / 42 St,2,Manhattan
+34 St-Penn Station ,2,Manhattan
+14 St / 6 Av,2,Manhattan
+Chambers St ,2,Manhattan
+Chambers St / WTC / Park Place,2,Manhattan
+Fulton St ,2,Manhattan
+Wall St ,2,Manhattan
+Clark St ,2,Brooklyn
+Court St / Borough Hall,2,Brooklyn
+Hoyt St ,2,Brooklyn
+Nevins St ,2,Brooklyn
+Atlantic Av-Barclays Center,2,Brooklyn
+Bergen St ,2,Brooklyn
+Grand Army Plaza ,2,Brooklyn
+Eastern Pkwy-Brooklyn Museum ,2,Brooklyn
+Franklin Av / Botanic Garden,2,Brooklyn
+President St ,2,Brooklyn
+Sterling St ,2,Brooklyn
+Winthrop St ,2,Brooklyn
+Church Av ,2,Brooklyn
+Beverly Rd ,2,Brooklyn
+Newkirk Av ,2,Brooklyn
+Flatbush Av-Brooklyn College ,2,Brooklyn
+Pelham Bay Park ,6,The Bronx
+Buhre Av ,6,The Bronx
+Middletown Rd ,6,The Bronx
+Westchester Sq-East Tremont Av ,6,The Bronx
+Zerega Av ,6,The Bronx
+Castle Hill Av ,6,The Bronx
+Parkchester ,6,The Bronx
+St Lawrence Av ,6,The Bronx
+Morrison Av-Soundview ,6,The Bronx
+Elder Av,6,The Bronx
+Whitlock Av ,6,The Bronx
+Hunts Point Av ,6,The Bronx
+Longwood Av ,6,The Bronx
+East 149 St ,6,The Bronx
+East 143 St-St Mary's St ,6,The Bronx
+Cypress Av ,6,The Bronx
+Brook Av ,6,The Bronx
+3 Av-138 St ,6,The Bronx
+125 St ,6,Manhattan
+116 St ,6,Manhattan
+110 St ,6,Manhattan
+103 St ,6,Manhattan
+96 St ,6,Manhattan
+86 St ,6,Manhattan
+77 St ,6,Manhattan
+68 St-Hunter College ,6,Manhattan
+Lexington Av / 59 St,6,Manhattan
+Lexington Av-53 St / 51 St,6,Manhattan
+Grand Central-42 St ,6,Manhattan
+33 St ,6,Manhattan
+28 St ,6,Manhattan
+23 St ,6,Manhattan
+14 St-Union Sq ,6,Manhattan
+Astor Place ,6,Manhattan
+Broadway-Lafayette St / Bleeker St,6,Manhattan
+Spring St ,6,Manhattan
+Canal St ,6,Manhattan
+Brooklyn Bridge-City Hall / Chambers St,6,Manhattan
+96 St ,Q,Manhattan
+86 St ,Q,Manhattan
+72 St ,Q,Manhattan
+Lexington Av-63 St ,Q,Manhattan
+57 St-7 Av ,Q,Manhattan
+Times Sq-42 St / 42 St,Q,Manhattan
+34 St-Herald Square ,Q,Manhattan
+14 St-Union Sq ,Q,Manhattan
+West 8 St-New York Aquarium ,Q,Brooklyn
+Canal St ,Q,Manhattan
+DeKalb Av ,Q,Brooklyn
+Atlantic Av-Barclays Center,Q,Brooklyn
+7 Av ,Q,Brooklyn
+Prospect Park ,Q,Brooklyn
+Parksde Av ,Q,Brooklyn
+Church Av ,Q,Brooklyn
+Beverley Rd,Q,Brooklyn
+Cortelyou Rd ,Q,Brooklyn
+Newkirk Plaza ,Q,Brooklyn
+Avenue H ,Q,Brooklyn
+Avenue J ,Q,Brooklyn
+Avenue M ,Q,Brooklyn
+Kings Hwy ,Q,Brooklyn
+Avenue U ,Q,Brooklyn
+Neck Rd ,Q,Brooklyn
+Sheepshead Bay ,Q,Brooklyn
+Brighton Beach ,Q,Brooklyn
+Ocean Pkwy ,Q,Brooklyn
+Coney Island-Stillwell Av ,Q,Brooklyn
+Forest Hills-71 Av ,R,Queens
+67 Av ,R,Queens
+63 Dr-Rego Park ,R,Queens
+Woodhaven Blvd ,R,Queens
+Grand Av-Newtown ,R,Queens
+Elmhurst Av ,R,Queens
+74-Bway / Jackson Hts-Roosevelt Av,R,Queens
+65 St ,R,Queens
+Northern Blvd ,R,Queens
+46 St ,R,Queens
+Steinway St ,R,Queens
+36 St ,R,Queens
+Queens Plaza ,R,Queens
+5 Av-59 St ,R,Manhattan
+57 St-7 Av ,R,Manhattan
+49 St ,R,Manhattan
+Times Sq-42 St / 42 St,R,Manhattan
+34 St-Herald Square ,R,Manhattan
+28 St ,R,Manhattan
+23 St ,R,Manhattan
+14 St-Union Sq ,R,Manhattan
+8 St-New York University ,R,Manhattan
+Prince St ,R,Manhattan
+Canal St ,R,Manhattan
+City Hall ,R,Manhattan
+Rector St ,R,Manhattan
+South Ferry / Whitehall St,R,Manhattan
+Court St / Borough Hall,R,Brooklyn
+Jay St-MetroTech ,R,Brooklyn
+DeKalb Av ,R,Brooklyn
+Atlantic Av-Barclays Center,R,Brooklyn
+Union St ,R,Brooklyn
+4 Av / 9 St,R,Brooklyn
+Prospect Av ,R,Brooklyn
+25 St ,R,Brooklyn
+36 St ,R,Brooklyn
+45 St ,R,Brooklyn
+53 St ,R,Brooklyn
+59 St ,R,Brooklyn
+Bay Ridge Av ,R,Brooklyn
+77 St ,R,Brooklyn
+86 St ,R,Brooklyn
+Bay Ridge-95 St ,R,Brooklyn
+Inwood-207 St ,A,Manhattan
+Dyckman St ,A,Manhattan
+190 St ,A,Manhattan
+181 St ,A,Manhattan
+175 St ,A,Manhattan
+168 St ,A,Manhattan
+145 St ,A,Manhattan
+125 St ,A,Manhattan
+59 St-Columbus Circle ,A,Manhattan
+Times Sq-42 St / 42 St,A,Manhattan
+34 St-Penn Station ,A,Manhattan
+14 St / 8 Av,A,Manhattan
+West 4 St-Washington Sq ,A,Manhattan
+Canal St ,A,Manhattan
+Chambers St / WTC / Park Place,A,Manhattan
+Fulton St ,A,Manhattan
+High St ,A,Brooklyn
+Jay St-MetroTech ,A,Brooklyn
+Hoyt-Schermerhorn Sts ,A,Brooklyn
+Nostrand Av ,A,Brooklyn
+Utica Av ,A,Brooklyn
+Broadway Junction ,A,Brooklyn
+Euclid Av ,A,Brooklyn
+Grant Av ,A,Brooklyn
+80 St ,A,Queens
+88 St ,A,Queens
+Rockaway Blvd ,A,Queens
+104 St ,A,Queens
+111 St ,A,Queens
+Ozone Park-Lefferts Blvd ,A,Queens
+Rockaway Park-Beach 116 St ,A,Queens
+Aqueduct Racetrack ,A,Queens
+Aqueduct-North Conduit Av ,A,Queens
+Howard Beach-JFK Airport ,A,Queens
+Broad Channel ,A,Queens
+Beach 105 St ,A,Queens
+Beach 98 St ,A,Queens
+Beach 90 St ,A,Queens
+Beach 67 St-Arverne By The Sea ,A,Queens
+Beach 60 St ,A,Queens
+Beach 44 St ,A,Queens
+Beach 36 St ,A,Queens
+Beach 25 St ,A,Queens
+Far Rockaway-MottAv ,A,Queens
